@@ -1,0 +1,11 @@
+<div class="content">
+  <p>OPTIONS</p>
+  <button type="button" class="content__button" [class.content__button-active]="isCollapsed" (click)="isCollapsed = !isCollapsed"
+          [attr.aria-expanded]="!isCollapsed" aria-controls="collapseBasic">•••
+  </button>
+  <div id="collapseBasic" class="content__options" [collapse]="!isCollapsed" [isAnimated]="true">
+    <div class="well well-lg card card-block card-header justify-content-center align-items-center content__menu">
+      <app-client-add (click)="isCollapsed=!isCollapsed"></app-client-add>
+    </div>
+  </div>
+</div>

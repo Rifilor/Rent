@@ -1,0 +1,21 @@
+.content-language {
+  &__button{
+    padding: 5px;
+    margin: 10px;
+    border: none;
+    font-size: 25px;
+    color: #8F8F8F;
+    background-color: transparent;
+    outline: none;
+    transition: 0.2s;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+
+    &-active {
+      color: #F58624;
+      transform: scale(1.2);
+    }
+  }
+}

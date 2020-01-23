@@ -1,0 +1,26 @@
+<div class="content-client row">
+  <div class="row col-11">
+    <div class="col-xl-4 col-lg-6 content-client__card-container" *ngFor="let c of clients">
+        <div class="card mb-3 content-client__card" style="max-width: 540px;">
+          <div class="row no-gutters">
+            <div class="col-md-4 content-client__img">
+              <img src="{{c.imgURL}}" class="card-img" alt="...">
+            </div>
+            <div class="col-md-7 content-client__info">
+              <div class="card-body">
+                <h5 class="card-title">{{c.name}}</h5>
+                <p class="card-text">{{c.number}}</p>
+                <p class="card-text">{{c.email}}</p>
+              </div>
+            </div>
+            <div class="col-md-1 content-client__button">
+              <app-client-options-card></app-client-options-card>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="col-1 d-flex justify-content-center">
+    <app-client-options></app-client-options>
+  </div>
+</div>

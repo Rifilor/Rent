@@ -1,0 +1,42 @@
+
+<nav class="navigation-menu">
+  <div class="title">
+    <p>RentHut</p>
+  </div>
+  <div class=" menu-item">
+    <ul class="nav flex-column">
+      <li class="nav-item" [routerLink]="['/home']">
+        <a class="nav-link nav-link-home d-flex"  href="/home" [class.link-active]="menuLogic.getLinkActive('/home') || menuLogic.getLinkActive('/')">
+          <div class="link-active-circle"></div>
+          <div class="nav-link-icon-home nav-link-icon"></div>
+          <div>Home</div>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link nav-link-clients d-flex" href="/clients" [class.link-active]="menuLogic.getLinkActive('/clients')">
+          <div class="link-active-circle"></div>
+          <div class="nav-link-icon-clients nav-link-icon"></div>
+          <div>Clients</div>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link nav-link-orders d-flex" href="/orders" [class.link-active]="menuLogic.getLinkActive('/orders')">
+          <div class="link-active-circle"></div>
+          <div class="nav-link-icon-orders nav-link-icon"></div>
+          <div>Orders</div>
+        </a>
+      </li>
+      <li class="nav-item align-items-center justify-content-center">
+        <a class="nav-link nav-link-products d-flex" href="/products" [class.link-active]="menuLogic.getLinkActive('/products')">
+          <div class="link-active-circle"></div>
+          <div class="nav-link-icon-products nav-link-icon"></div>
+          <div>Products</div>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="navigation-menu__button-language">
+    <app-button-language></app-button-language>
+  </div>
+
+</nav>

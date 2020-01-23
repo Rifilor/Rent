@@ -1,0 +1,30 @@
+<div class="content-orders">
+  <div>
+  <ngx-datatable
+    class="material"
+    rowHeight="600"
+    [rows]="orders"
+    [headerHeight]="50"
+    [footerHeight]="100"
+    [limit]="10"
+    [rowHeight]="50">
+
+    <ngx-datatable-column name="Title" class="content-orders__template" width="500">
+      <ng-template let-value="value" ngx-datatable-cell-template>
+        <strong>{{ value }}</strong>
+      </ng-template>
+    </ngx-datatable-column>
+
+    <ngx-datatable-column name="Address" width="400">
+      <ng-template let-value="value" ngx-datatable-cell-template>
+        <strong>{{ value }}</strong>
+      </ng-template>
+    </ngx-datatable-column>
+
+    <ngx-datatable-column name="Term" width="300">
+      <ng-template let-value="value" ngx-datatable-cell-template>
+        <strong>{{ value }}</strong>
+      </ng-template>
+    </ngx-datatable-column>
+  </ngx-datatable></div>
+</div>

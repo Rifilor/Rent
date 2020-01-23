@@ -1,0 +1,31 @@
+.content-home {
+ &__sections {
+   p {
+     padding: 4px;
+     margin: 0 5px 0 5px;
+   }
+   margin: 5px 0 15px 0;
+ }
+
+  &__button {
+    color: #8F8F8F;
+    padding: 0;
+    border: none;
+    font: inherit;
+    background-color: transparent;
+    transition: 0.1s linear;
+  }
+
+  &__button:hover {
+    transform: scale(1.1);
+  }
+
+  &__button-active {
+    transform: scale(1.1);
+    color: #F58624;
+  }
+}
+
+button:active, button:focus {
+  outline: none;
+}

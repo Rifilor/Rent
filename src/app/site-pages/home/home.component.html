@@ -1,0 +1,85 @@
+<div class="content-home">
+
+  <div class="content-home__sections d-flex justify-content-center">
+    <div class="d-flex align-items-center">
+      <button class="content-home__button" (click)="changeSectionDaily()" [class.content-home__button-active]="Daily">Daily</button>
+      <p>/</p>
+      <button class="content-home__button" (click)="changeSectionMonthly()" [class.content-home__button-active]="Monthly">Monthly</button>
+    </div>
+  </div>
+
+  <div class="content-home__daily" *ngIf="Daily">
+    <ngx-datatable
+      class="material"
+      rowHeight="600"
+      [rows]="home"
+      [headerHeight]="50"
+      [footerHeight]="100"
+      [limit]="10"
+      [rowHeight]="50">
+
+      <ngx-datatable-column name="Name" class="content-orders__template" width="400">
+        <ng-template let-value="value" ngx-datatable-cell-template>
+          <strong>{{ value }}</strong>
+        </ng-template>
+      </ngx-datatable-column>
+
+      <ngx-datatable-column name="Phone" width="300">
+        <ng-template let-value="value" ngx-datatable-cell-template>
+          <strong>{{ value }}</strong>
+        </ng-template>
+      </ngx-datatable-column>
+
+      <ngx-datatable-column name="Address" width="300">
+        <ng-template let-value="value" ngx-datatable-cell-template>
+          <strong>{{ value }}</strong>
+        </ng-template>
+      </ngx-datatable-column>
+
+      <ngx-datatable-column name="Date" width="200">
+        <ng-template let-value="value" ngx-datatable-cell-template>
+          <strong>{{ value }}</strong>
+        </ng-template>
+      </ngx-datatable-column>
+    </ngx-datatable>
+  </div>
+
+  <div class="content-home__monthly row" *ngIf="Monthly">
+    <div class="col-4">
+
+      <ngx-datatable
+        class="material"
+        rowHeight="600"
+        [rows]="home"
+        [headerHeight]="50"
+        [footerHeight]="100"
+        [limit]="10"
+        [rowHeight]="50">
+
+        <ngx-datatable-column name="Name" class="content-orders__template" width="250">
+          <ng-template let-value="value" ngx-datatable-cell-template>
+            <strong>{{ value }}</strong>
+          </ng-template>
+        </ngx-datatable-column>
+
+        <ngx-datatable-column name="Phone" width="200">
+          <ng-template let-value="value" ngx-datatable-cell-template>
+            <strong>{{ value }}</strong>
+          </ng-template>
+        </ngx-datatable-column>
+      </ngx-datatable>
+
+    </div>
+
+    <div class="col-4 row">
+
+      <div class="pr-3 pb-3">
+        <bs-daterangepicker-inline [bsValue]="bsInlineRangeValue"></bs-daterangepicker-inline>
+      </div>
+
+    </div>
+  </div>
+
+
+
+</div>

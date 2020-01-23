@@ -1,0 +1,25 @@
+.content-client {
+  &__card {
+    border-radius: 20px;
+    height: 200px;
+  }
+
+  &__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0 10px 10px;
+    height: 200px;
+    img {
+      border-radius: 20px;
+      max-height: 180px;
+      max-width: 130px;
+    }
+  }
+
+  &__button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+}

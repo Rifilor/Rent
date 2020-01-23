@@ -1,0 +1,20 @@
+<div class="content-profile d-flex align-items-center justify-content-center">
+  <div class="content-profile__setting-menu">
+    <button type="button" class="content-profile__button-profile dropdown-toggle" (click)="isCollapsed = !isCollapsed"
+              [attr.aria-expanded]="!isCollapsed" aria-controls="collapseBasic">
+      User</button>
+    <div class="content-profile__menu-profile" id="collapseBasic" [collapse]="!isCollapsed" [isAnimated]="true">
+      <div class="">
+        <p>Profile Setting</p>
+        <hr>
+        <p>Logout</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-profile__img-profile">
+
+  </div>
+
+</div>
+

@@ -1,0 +1,16 @@
+<div class="btn-group" dropdown>
+  <button id="button-animated" dropdownToggle type="button" class="button"
+          aria-controls="dropdown-animated">
+    •••
+    <span class="caret"></span>
+  </button>
+  <ul id="dropdown-animated" *dropdownMenu class="dropdown-menu"
+      role="menu" aria-labelledby="button-animated">
+    <li role="menuitem">
+      <app-client-edit></app-client-edit>
+    </li>
+    <li role="menuitem">
+      <app-client-delete></app-client-delete>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,144 @@
+.navigation-menu{
+  position: fixed;
+  font-family: 'Proxima Nova', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20vw;
+  height: 100vh;
+  background-color: #0E1D30;
+
+  &__button-language {
+    position: absolute;
+    bottom: 50px;
+  }
+}
+
+.title{
+  padding-top: 55px;
+  font-family: 'Pacifico', sans-serif;
+  color: #F58624;
+  font-size: 48px;
+}
+
+.menu-item {
+  margin-top: 130px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-item {
+  margin-bottom: 20px;
+}
+
+.link-active {
+  color: #F58624 !important;
+  background-color: #050C16 !important;
+  border-radius: 40px;
+  .nav-link {
+    &-icon {
+      background-image: url("image/navbar-icon/active.png") !important;
+    }
+  }
+
+  .link-active-circle {
+    background-image: url("image/navbar-icon/circle.png");
+  }
+}
+
+image {
+  width: 100px;
+  height: 100px;
+}
+
+
+
+
+// ВСТАВКА ИЗОБРАЖЕНИЯ ДЛЯ ПУНКТОВ МЕНЮ
+
+.nav-link {
+  font-size: 30px;
+  color: #8F8F8F;
+  text-decoration: none;
+
+  align-items: center;
+  padding: 15px 30px 15px 20px;
+  border-radius: 40px;
+
+  &-icon {
+    margin-right: 10px;
+    margin-bottom: 4px;
+
+    width: 35px;
+    height: 35px;
+
+    background-repeat: no-repeat;
+    background-size: 35px 35px;
+
+    &-home {
+      background-image: url("image/navbar-icon/home.png");
+    }
+
+    &-clients {
+      background-image: url("image/navbar-icon/client.png");
+    }
+
+    &-orders {
+      background-image: url("image/navbar-icon/orders.png");
+    }
+
+    &-products {
+      background-image: url("image/navbar-icon/products.png");
+
+    }
+  }
+}
+
+
+// СМЕНА ИЗОБРАЖЕНИЯ ПРИ НАВЕДЕНИИ И ТЕКСТА
+.nav-link:hover{
+  color: #F58624
+}
+
+.nav-link {
+  &-home:hover{
+    .nav-link-icon-home {
+      background-image: url("image/navbar-icon-hover/home-hover.png");
+    }
+  }
+
+  &-clients:hover {
+    .nav-link-icon-clients {
+      background-image: url("image/navbar-icon-hover/client-hover.png");
+    }
+  }
+
+  &-orders:hover {
+    .nav-link-icon-orders {
+      background-image: url("image/navbar-icon-hover/orders-hover.png");
+    }
+  }
+
+  &-products:hover {
+    .nav-link-icon-products {
+      background-image: url("image/navbar-icon-hover/products-hover.png");
+    }
+  }
+}
+
+
+// КРУГ СЛЕВА ПРИ АКТИВАЦИИ (ГЕМОРРОЙ)
+
+.link-active-circle {
+  position: absolute;
+  z-index: 0;
+  left: -1px;
+  width: 20px;
+  height: 80px;
+
+  background-repeat: no-repeat;
+  background-size: 20px 75px;
+
+    background-image: url("image/navbar-icon/circle-none.png");
+}

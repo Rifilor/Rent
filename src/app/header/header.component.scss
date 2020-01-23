@@ -1,0 +1,49 @@
+.header-content {
+  &__search-form {
+  }
+
+  &__input {
+    border-radius: 20px;
+    border: 1px #8F8F8F solid;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/945px-Vector_search_icon.svg.png) no-repeat center left 7px;
+    background-size: 15px 15px;
+    padding-left:30px;
+  }
+
+  &__input:focus {
+    border: 1px solid rgb(245, 134, 36, 0.5);
+    box-shadow: 0 0 0 1px rgb(245, 134, 36, 0.5);
+  }
+
+  &__button-search {
+    padding: 5px 15px;
+    margin-left: 20px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 1px #8F8F8F solid;
+    color: #8F8F8F;
+    outline: none;
+  }
+
+  &__button-search:active {
+    border-radius: 20px;
+    border: 1px solid rgb(245, 134, 36, 0.5);
+    box-shadow: 0 0 0 1px rgb(245, 134, 36, 0.5);
+  }
+
+}
+
+.form-control {
+
+}
+
+.form-control:focus {
+
+}
+
+.container-fluid {
+  background-color: #000;
+}
+

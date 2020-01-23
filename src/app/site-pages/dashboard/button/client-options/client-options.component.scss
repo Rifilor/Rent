@@ -1,0 +1,43 @@
+.content {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+
+  &__button {
+    transform: scale(1.5);
+
+    border-radius: 100px;
+    padding: 5px 10px 5px 10px;
+
+    border: 2px #8F8F8F solid;
+    color: #8F8F8F;
+
+    font: inherit;
+    background-color: transparent;
+    outline: none;
+
+    transition: 0.2s linear;
+
+    &:hover {
+      transform: scale(1.6);
+      color: #F58624;
+      border-color: #F58624;
+    }
+
+    &-active {
+      transform: scale(1.6);
+      color: #F58624;
+      border-color: #F58624;
+    }
+  }
+
+  &__options {
+    margin-top: 20px;
+    width: 140px;
+  }
+
+  &__menu {
+    border-radius: 10px;
+  }
+}

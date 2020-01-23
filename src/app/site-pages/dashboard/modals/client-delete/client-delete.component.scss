@@ -1,0 +1,61 @@
+button {
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  outline: none;
+
+  transition: 0.1s linear;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.__modal {
+  div {
+    margin-bottom: 15px;
+  }
+}
+
+.close {
+  color: crimson;
+  transform: scale(2);
+  &:hover {
+    transform: scale(2) !important;
+  }
+}
+
+.btn-yes {
+  border: 2px #8F8F8F solid;
+  border-radius: 20px;
+  padding: 5px 10px 5px 10px;
+
+  &:active {
+    border-color: limegreen;
+    color: limegreen;
+  }
+}
+
+.btn-close {
+  border: 2px #8F8F8F solid;
+  border-radius: 20px;
+  padding: 5px 10px 5px 10px;
+
+  &:active {
+    border-color: crimson;
+    color: crimson;
+  }
+}
+
+.form-control {
+  border-radius: 20px;
+  border: 1px #8F8F8F solid;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+}
+
+.form-control:focus {
+  border: 1px solid rgb(245, 134, 36, 0.5);
+  box-shadow: 0 0 0 1px rgb(245, 134, 36, 0.5);
+}

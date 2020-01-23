@@ -1,0 +1,38 @@
+.content-profile {
+  &__button-profile {
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+
+    padding: 0 10px;
+  }
+
+  &__menu-profile {
+    position: absolute;
+    background-color: rgba(93, 93, 93, 0.74);
+    padding: 20px;
+    margin-top: 10px;
+    z-index: 99999;
+
+    width: 200px;
+    height: auto;
+
+  }
+
+  &__img-profile {
+    width: 35px;
+    height: 35px;
+
+    border-radius: 100px;
+
+    background-repeat: no-repeat;
+    background-size: 35px 35px;
+    background-image: url("https://i.pinimg.com/originals/f7/7c/fd/f77cfd3d064017cb3cbf60117fb511d8.jpg");
+  }
+}
+ p:hover {
+   color: #F58624;
+ }
